@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+      <link rel="icon" href="favicon.ico">
+      <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
+      <script src="./javascripts/jquery-3.7.1.js"></script>
+      <script src="javascripts/java-script.js" charset="utf-8"></script>
+  </head>
+  <body>
+<hr>
+    <table>  <!-- Табличка -->
+      <thead>  <!-- Table head - Шапка таблички  -->
+        <tr>   <!-- Table row - Ряд для таблицы -->
+          <th> <!-- Ячейка в нутри ряда в таблице -->
+          Неделя</th>
+          <th>Название</th>
+          <th>Дата</th>
+          <th>Предмет</th>
+          <th>Тип</th>
+          <th>+</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+         <td> 1 </td>
+         <td> Верстаем форму </td>
+         <td> 26 апреля 2024 </td>
+         <td> <div class="sp_red"> Tehnology </div> </td>
+         <td> <div class="sp_green"> Workshop </div></td>
+         <td>  </td>
+        </tr>
+      </tbody>
+    </table>
+
+<form id="new_row" action="">
+<input name="week" type="text" placeholder="Week">
+<input name="name" type="text" placeholder="Name">
+<input name="date" type="text" placeholder="Date">
+<select name="disk" id="">
+  <option value="nothing1">Object</option>
+  <option value="nothing2">Tehnology</option>
+  <option value="nothing3">Math</option>
+</select>
+<select name="type" id="">
+  <option value="atypical1">Type</option>
+  <option value="atypical2">Workshop</option>
+  <option value="atypical3">Lecture</option>
+</select>
+<button type="button" name="button"> + </button>
+</form>
+
+  </body> 
+</html>

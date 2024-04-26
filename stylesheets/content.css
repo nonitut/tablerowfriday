@@ -1,0 +1,115 @@
+*{ box-sizing: border-box;}
+html, body{ height: 100%;}
+
+@font-face {
+font-family: "CarlaSansLight";
+src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+font-style: Light;
+font-weight: Light;
+}
+
+p, table, form, input, select { font-family: 'CarlaSansLight'; }
+
+
+
+table, form{
+    width: 94%;
+    margin-left: 3%;
+    border-collapse: collapse;
+    font-size: 1.5vw;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: left;
+    font-weight: 400;
+    padding: 0.5vw;
+}
+th{  color: #999; }
+
+tr:first-child, th:first-child, td:first-child, #new_row > *:last-child{
+    border-left: none ;
+}
+td, th{
+    border-right: none ;
+}
+
+#new_row > *{
+border: none;
+border-bottom: 1px solid #ddd;
+padding: 5px 8px ;
+font-size: 1.5vw;
+text-align: left;
+width: 20%;
+height: 2.5vw;
+}
+
+td{
+    color: #525252;
+    font-weight: 400;
+    border-top: 1px solid #ddd ;
+}
+
+td:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
+th:last-of-type{
+    width: 3vw;
+    text-align: center;
+    font-size: larger;
+}
+
+th:first-of-type, td:first-of-type, #new_row > input:first-of-type{
+    width: 10%;
+}
+
+th:nth-of-type(2), td:nth-of-type(2),  
+#new_row > input:nth-of-type(2){
+width: 20%;
+font-weight: 600;
+}
+
+td > div {
+    display: inline-block;
+    background: #eee;
+    border-radius: 0.2vw;
+    padding: 4px 12px;
+}
+
+.sp_green{
+    background: rgb(35, 86, 35) ;
+    color:white;
+}
+
+.sp_red{
+    background: rgb(238, 54, 115);
+    color:white;
+}
+
+#new_row{
+    width: 94%;
+    display: flex;
+    border-collapse: collapse;
+}
+#new_row > *:focus{
+    outline: none;
+}
+
+form > input:nth-of-type(3){
+    margin-right: 5%;
+}
+
+#new_row select {
+    border-radius: 0;
+    width: 22%;
+}
+
+#new_row > button{
+    width: 3vw;
+    font-size: 1.5vw;
+    text-align: center;
+    background: transparent;
+    border-right: none;
+}
